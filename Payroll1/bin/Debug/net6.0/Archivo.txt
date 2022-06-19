@@ -1,0 +1,7 @@
+You entered de Following Data:
+-------------------------------
+Document:1074414468
+First Name:Laura
+Last Name:Castiblanco
+Salary:1500000
+Worked Days:20
