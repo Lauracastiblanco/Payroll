@@ -5,6 +5,3 @@ First Name:Laura
 Last Name:Castiblanco
 Salary:1500000
 Worked Days:20
-
-Discounts
-Health Discount:
