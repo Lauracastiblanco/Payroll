@@ -1,3 +1,5 @@
+You entered de Following Data:
+-------------------------------
 Document:1052836697
 First Name:Pedro
 Last Name:Galeano
