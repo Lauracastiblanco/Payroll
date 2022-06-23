@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -41,11 +41,10 @@ namespace Payroll1
                 file.WriteLine("Last Name:" + employer.LastName1);
                 file.WriteLine("Salary:" + employer.Salary1);
                 file.WriteLine("Worked Days:" + employer.Worked_days);
-                file.Close();
-                Console.Clear();
+       
 
 
-                //Print Data Employeer Console
+            //Print Data Employeer Connsole
                Console.WriteLine("You entered de Following Data:");
                Console.WriteLine("-------------------------------");
                Console.WriteLine("Document:" + employer.Document1);
@@ -79,17 +78,35 @@ namespace Payroll1
                         {
 
                             employer.Totallyincome1 = employer.Salary1 + TransportAllow;
+
+                            // Print Data Employeer Console
+
                             Console.WriteLine(" ");
                             Console.WriteLine("Incomes:");
                             Console.WriteLine("------------------------------");
                             Console.WriteLine("Tranport Benefit: " + employer.Totallyincome1);
 
+
+                            //Print Data Employeer file
+
+                            file.WriteLine(" ");
+                            file.WriteLine("Incomes:");
+                            file.WriteLine("------------------------------");
+                            file.WriteLine("Tranport Benefit: " + employer.Totallyincome1);
+                             
                         }
                         else
                         {
+
+                            // Print Data Employeer Console
                             employer.Totallyincome1 = employer.Salary1;
                             Console.WriteLine("----------------------------------");
                             Console.WriteLine("Salary:  " + employer.Totallyincome1);
+
+                            //Print Data Employeer file
+
+                            file.WriteLine("----------------------------------");
+                            file.WriteLine("Salary:  " + employer.Totallyincome1);
 
                         }
                          // Discounts
@@ -106,7 +123,17 @@ namespace Payroll1
                         Console.WriteLine("Health Discount:" + employer.Health1);
                         Console.WriteLine("Pension Discount:" + employer.Pension1);
 
-                        do 
+                        // Print Data Employeer file
+
+                        file.WriteLine(" ");
+                        file.WriteLine("Discounts");
+                        file.WriteLine("----------------------------------");
+                        file.WriteLine("Health Discount:" + employer.Health1);
+                        file.WriteLine("Pension Discount:" + employer.Pension1);
+                        file.Close();
+                        Console.Clear();
+
+                        do
                         {
                             char option;
                             Console.WriteLine("-------------------------------");
@@ -116,8 +143,7 @@ namespace Payroll1
                             {
                                 case '1': Menu menu1 = new Menu(); menu1.menu(); break;
                                 case '2': Console.WriteLine("Thanks for using the program");
-
-                                        Environment.Exit(0); break;
+                                Environment.Exit(0); break;
                             }
                         }
                         while (true);
@@ -132,21 +158,9 @@ namespace Payroll1
             }
 
             while (false);
-            
-
-
-            
-
-
-
-
 
 
         }
-
-
-
-
 
 
     }
