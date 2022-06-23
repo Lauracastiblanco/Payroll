@@ -1,7 +1,14 @@
-You entered de Following Data:
--------------------------------
-Document:1074414468
-First Name:Laura
-Last Name:Castiblanco
-Salary:1500000
-Worked Days:20
+Document:1052836697
+First Name:Pedro
+Last Name:Galeano
+Salary:1000000
+Worked Days:18
+ 
+Incomes:
+------------------------------
+Tranport Benefit: 1117172
+ 
+Discounts
+----------------------------------
+Health Discount:40000
+Pension Discount:40000
